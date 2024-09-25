@@ -21,7 +21,7 @@ const handler = async (m, {command, conn}) => {
   }
 
   if (command == 'nsfwass') {
-    const res = (await axios.get(`https://raw.githubusercontent.com/KillzN/ReadzAleizn/master/src/JSON/nsfwass.json`)).data;
+    const res = (await axios.get(`https://raw.githubusercontent.com/KillzN/Perfect1/master/src/JSON/nsfwass.json`)).data;
     const haha = await res[Math.floor(res.length * Math.random())];
     conn.sendMessage(m.chat, {image: {url: haha}, caption: `_${command}_`.trim()}, {quoted: m});
   }
